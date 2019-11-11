@@ -9,12 +9,14 @@ $(document).ready(function(){
             name_find = "";
         }
         name_find = name_find.trim();
-        $.get("superheroes.php",
-        {
-            query: name_find
+        $.ajax("superheroes.php", {
+            method: 'GET',
+            data: {
+                query: name_find
+            }
         }).done(function(response){
             let reply = response;
-            alert(reply);
+            $('#result').html(reply);
         }).fail(function(){
             alert('An error occured with loading page');
         });
