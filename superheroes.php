@@ -83,7 +83,7 @@ if($_SERVER['REQUEST_METHOD'] === 'GET'){
         } else {
             $end_of_list++;
             if($end_of_list === 10){
-            echo "<h3>SUPERHERO NOT FOUND</h3>";
+            echo "<h3 id=\"notF\">SUPERHERO NOT FOUND</h3>";
             }
         }
       }

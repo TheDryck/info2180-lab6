@@ -7,6 +7,10 @@ input{
     width: 20em;
 }
 
+#notF{
+    color: #ff0000;
+}
+
 button{
     background-color: #ff0000;
     color: #ffffff;
